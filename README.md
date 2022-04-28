@@ -71,18 +71,19 @@ Open a browser and go to URL
 
 ## 1. Pre-requisites
 
-pip3 install flask
-pip3 install flask-mysql
+    pip3 install flask
+    pip3 install flask-mysql
 
 ## 2. Install and Configure Database
 
-####wget https://repo.mysql.com/mysql80-community-release-el8-1.noarch.rpm
-####yum localinstall mysql80-community-release-el8-1.noarch.rpm
+    ####wget https://repo.mysql.com/mysql80-community-release-el8-1.noarch.rpm
+    ####yum localinstall mysql80-community-release-el8-1.noarch.rpm
 
-yum install mysql-server
-service mysqld start
+    yum install mysql-server
+    service mysqld start
 
 Enter Database, configure 
+
         mysql> CREATE USER 'db_user'@'localhost' IDENTIFIED BY 'PasswOrd';
         mysql> GRANT ALL ON *.* to 'db_user'@'localhost'
         mysql> USE employee_db;
