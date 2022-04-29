@@ -100,7 +100,7 @@ Enter Database, configure
 
 Start web server
 
-    FLASK_APP=app.py flask run --host=0.0.0.0
+    FLASK_APP=/opt/app.py nohup flask run &
     
 ## 4. Test
 
